@@ -31,7 +31,7 @@ names = ["Святослав Юриков",
 
 print(len(names))
 
-attributes = ["Высок(ий/ая)", "Любит гулять", "Общительн(ый/ая)", "Играет в Dota", "Играет в Minecraft", "Играет в карты"]
+attributes = ["Любит гулять", "Общительн(ый/ая)", "Играет в Dota", "Играет в Minecraft", "Играет в карты"]
 
 ruleset = {}
 
@@ -47,4 +47,5 @@ def fancy_output(ruleset):
         print(name, rule)
 
 print(ruleset)
+print(len(ruleset.keys()))
 fancy_output(ruleset)
