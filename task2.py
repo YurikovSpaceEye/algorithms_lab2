@@ -23,9 +23,7 @@ for i in range(len(attributes)):
             att_set += "0"
             break
 
-
-if att_set not in ruleset.keys():
+try:
+    print(f"Вы загадали {ruleset[att_set]}.")
+except:
     print("Студента с такими характеристиками нет")
-    exit(0)
-
-print(f"Вы загадали {ruleset[att_set]}.")
