@@ -5,18 +5,17 @@ def binary_search(arr, x):
 
     iterations = 0
     while low <= high:
-
-        iterations += 1
-
         mid = (high + low) // 2
 
         # Если x больше, игнорируй левую часть
         if arr[mid] < x:
             low = mid + 1
+            iterations += 1
 
         # Если x меньше, игнорируй правую часть
         elif arr[mid] > x:
             high = mid - 1
+            iterations += 1
 
         # x означает что индекс x является mid
         else:
